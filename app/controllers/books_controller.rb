@@ -49,7 +49,7 @@ class BooksController < ApplicationController
   end
 
   # DELETE /books/1 or /books/1.json
-  def destoy
+  def destroy
     @book.destroy
 
     respond_to do |format|
