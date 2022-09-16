@@ -1,5 +1,6 @@
-class CreateBooks < ActiveRecord::Migration[6.1]
+class UpdateBooks < ActiveRecord::Migration[6.1]
   def change
+    drop_table :books
     create_table :books do |t|
       t.string :title
       t.string :author
